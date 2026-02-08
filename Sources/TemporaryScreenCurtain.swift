@@ -34,7 +34,11 @@ public struct TemporaryScreenCurtain: View {
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.dismiss) private var dismiss
     
-    var uiColor: UIColor = .systemBackground
+    var uiColor: UIColor
+    
+    public init(uiColor: UIColor = .systemBackground) {
+        self.uiColor = uiColor
+    }
     
     public var body: some View {
         NavigationStack {
