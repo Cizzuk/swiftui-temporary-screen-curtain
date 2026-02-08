@@ -5,7 +5,17 @@
 //  Created by Cizzuk on 2026/02/08.
 //
 
+#if !canImport(SwiftUI)
+#error("TemporaryScreenCurtain requires SwiftUI-compatible platform.")
+#else
 import SwiftUI
+#endif
+
+#if !canImport(UIKit)
+#error("TemporaryScreenCurtain requires UIKit-compatible platform.")
+#else
+import UIKit
+#endif
 
 public extension View {
     func temporaryScreenCurtain(
