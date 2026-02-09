@@ -1,6 +1,6 @@
 //
 //  TemporaryScreenCurtain.swift
-//  Side Search
+//  swiftui-temporary-screen-curtain
 //
 //  Created by Cizzuk on 2026/02/08.
 //
